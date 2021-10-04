@@ -14,4 +14,6 @@
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
+ - .Router();
+
 
