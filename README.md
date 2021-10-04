@@ -14,10 +14,12 @@
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
- - .Router()
+ - express.Router()
  - how, knex, express, and database all three are connected, how do they work
  - why do we need framwork (express.js)
  - what is rout/routing (http and http methods - get, post, put, delete)
+ - Middleware
+ 
 
 #### Dependencies
  - nodemon - to restart the server automatically everytime I change anything in the code.
@@ -33,4 +35,6 @@
  only port parameter is required here
 ### app.all()
  this method is generally used for defining middleware
- 
+### regex
+ regex to restrict URL parameter matching.
+ - example - app.get('/things/:id([0-9]{5})', callback)
