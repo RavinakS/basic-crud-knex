@@ -12,9 +12,9 @@ app.get('/ravina', (req, res)=>{
 app.get('/:user/:id', (req, res)=>{
     id = req.params.id;
     user = req.params.user;
-
     res.send('Hey this is ' + user + " " + id)
 })
+
 app.listen(3040, (req, res)=>{
     console.log('server is running-----');
 })

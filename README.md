@@ -19,4 +19,5 @@
  - why do we need framwork (express.js)
  - what is rout/routing (http and http methods - get, post, put, delete)
 
-
+#### Dependencies
+ - nodemon - to restart the server automatically everytime I change anything in the code.
