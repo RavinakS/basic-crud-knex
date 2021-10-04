@@ -14,6 +14,8 @@
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
- - .Router();
+ - .Router()
+ - how, knex, express, and database all three are connected, how do they work
+ 
 
 
