@@ -16,6 +16,7 @@
  - how .then works with hasTable() method
  - .Router()
  - how, knex, express, and database all three are connected, how do they work
- 
+ - why do we need framwork (express.js)
+ - what is rout/routing (http and http methods - get, post, put, delete)
 
 
