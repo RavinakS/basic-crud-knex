@@ -9,3 +9,9 @@
 
 #### Second table
  - user_post (userId, ImgUrl, date, captionForImg) - post
+
+ #### Needs to study
+ - string() method
+ - difference between controller and routs folder
+ - how .then works with hasTable() method
+
