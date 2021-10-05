@@ -2,9 +2,6 @@ const express = require('express');
 const app = express();
 const things = require('./routes/test_things')
 
-
-app.use(amiddleware);
-
 app.get('/', function (req, res){
     res.send("Hello world!!");
 })
@@ -13,6 +10,8 @@ app.all('/ravina', (req, res)=>{
     res.send("Well Come Ravina!")
 })
 
+app.use(amiddleware);
+
 app.get('/:user/:id', (req, res)=>{
     id = req.params.id;
     user = req.params.user;
@@ -20,7 +19,8 @@ app.get('/:user/:id', (req, res)=>{
 })
 
 function amiddleware(req, res, next){
-        console.log("Middleware is executed. :>)");
+    console.log("Middleware is executed. :>)");
+    next();
 }
 
 app.listen(3040, (req, res)=>{
