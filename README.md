@@ -10,7 +10,20 @@
 #### Second table
  - user_post (userId, ImgUrl, date, captionForImg) - post
 
- #### Needs to study
+## Needs to do
+**I have created two table**
+
+ 1. for user registration
+ 2. for user post 
+ 3. for each table I created the route, post, put, delete, get
+
+**Inputs** 
+ 1. User registration
+    - Name, email, password
+ 2. user post
+    - Date, imgurl, captionforimg
+
+## Needs to study
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
