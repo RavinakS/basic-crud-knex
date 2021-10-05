@@ -24,6 +24,11 @@
     - Date, imgurl, captionforimg
 
 ## Needs to study
+
+blog - https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
+
+video - https://www.youtube.com/watch?v=lY6icfhap2o
+
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
