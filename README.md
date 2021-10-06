@@ -37,6 +37,10 @@ video - https://www.youtube.com/watch?v=lY6icfhap2o
  - why do we need framwork (express.js)
  - what is rout/routing (http and http methods - get, post, put, delete)
  - Middleware
+ - How many parameters does app.get() method takes
+ - difference between get() and post() method
+ - How middleware functions are getting called without paranthisis (app.use(demoMiddleware);)
+ - How to use middleware to check if the user is logged in? the basic one
  
 
 #### Dependencies

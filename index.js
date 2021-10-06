@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const things = require('./routes/test_things')
 
-app.use(authorizeUserAccess);
+app.use(demoMiddleware);
 
 app.get('/', function (req, res){
     res.send("Hello world!!");
 })
 
-app.all('/ravina', (req, res)=>{
-    res.send("Well Come Ravina!")
+app.all('/users', authorizeUserAccess, (req, res)=>{
+    res.send("Well Come to users page!")
 })
 
 app.get('/:user/:id', (req, res)=>{
