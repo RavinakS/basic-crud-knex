@@ -10,6 +10,8 @@ router.get('/users', (req, res)=>{
         res.send(response);
     })
     .catch((err)=>{
-        res.send('error ' + err)
+        res.send('error' + err)
     })
 })
+
+module.exports = router;
