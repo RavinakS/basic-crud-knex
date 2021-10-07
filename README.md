@@ -1,29 +1,37 @@
 # Parmpara Project
 
 ## Basic Mysql implementation with knex
+Create three tables 1. user registration, 2. user posts and 3. Question answer and for each table I have to write four routs(get, post, put and delete)
 
-### Create Database
+# MVC
+## M(Model)
+- connection (db connection using knex and creating tables)
+  - database.js - database connection which is "user_details" 
+  - user_registration_table.js - creating user registration table
+  - user_posts_table.js - creating user posts table
+  - q_and_a.js - creating question and answer table(que_ans)
 
-#### Fisrt table
- - 1 /registration a user (name, email, password) - post
- - 2 /profile-edit/:userId (name, email, password )-put
- - 3 /delete-user/:userId - delete
+queries - (all about query) 
+- user_registration.js - all the queries for user registration table
+- user_posts.js - all the queries for the user posts table
+- q_and_a.js - all the queries for question answers table
 
-#### Second table
- - user_post (userId, ImgUrl, date, captionForImg) - post
+## V(View)
+- nothing
 
-## Needs to do
-**I have created two table**
+## Controller
+- routes - this folder is for all the routs
+  - user_registration.js - all the routs of user_registration queries
+  - user_posts.js - all the routs of user_posts queries
+  - q_and_a.js - routs of q_and_a.js queries
 
- 1. for user registration
- 2. for user post 
- 3. for each table I created the route, post, put, delete, get
 
 **Inputs** 
  1. User registration
     - Name, email, password
  2. user post
     - Date, imgurl, captionforimg
+
 
 ## Needs to study
 
@@ -48,8 +56,8 @@ video - https://www.youtube.com/watch?v=lY6icfhap2o
 #### Dependencies
  - nodemon - to restart the server automatically everytime I change anything in the code.
 
-#### What is:- 
 
+#### What is:- 
 ### rout
  route is basically a path in http methods (get, post, put, delete, etc)
   - syntax - get(rout, callback)/ get('/user', function(req, res){})
