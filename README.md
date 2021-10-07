@@ -31,6 +31,8 @@ queries - (all about query)
     - Name, email, password
  2. user post
     - Date, imgurl, captionforimg
+ 3. Question and answers
+    - question_id, question, answer  
 
 
 ## Needs to study
