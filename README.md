@@ -1,4 +1,4 @@
-# Parampara Project
+# Parmpara Project
 
 ## Basic Mysql implementation with knex
 
