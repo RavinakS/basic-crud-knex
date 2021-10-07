@@ -1,4 +1,3 @@
-// const { default: knex } = require('knex');
 const database = require('./database');
 
 database.schema.hasTable('user_registration').then(function(exists){
