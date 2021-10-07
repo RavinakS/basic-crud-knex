@@ -12,4 +12,3 @@ knex.schema.hasTable('user_registration').then(function(exists){
     }
 })
 
-module.exports = database;
