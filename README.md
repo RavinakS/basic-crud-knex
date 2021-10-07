@@ -35,10 +35,6 @@ queries - (all about query)
 
 ## Needs to study
 
-blog - https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
-
-video - https://www.youtube.com/watch?v=lY6icfhap2o
-
  - string() method
  - difference between controller and routs folder
  - how .then works with hasTable() method
@@ -73,3 +69,10 @@ video - https://www.youtube.com/watch?v=lY6icfhap2o
 
 ## Middleware 
 middleware as functions that execute after the server receives the request and before the controller action sends the response. The biggest thing is that middleware functions have access to the response (res) and request (req) variables and can modify them or use them as needed. Middleware functions also have a third parameter which is a next function. This function is important since it must be called from a middleware for the next middleware to be executed. If this function is not called then none of the other middleware including the controller action will be called.
+
+blog - https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
+
+video - https://www.youtube.com/watch?v=lY6icfhap2o
+
+# Extra
+- postman console short-cut - CMD/CTRL + ALT + C

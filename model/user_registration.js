@@ -1,6 +1,6 @@
 const db = require('../connection/database');
 
-const users_detail = () =>{
+const usersDetail = () =>{
     return db.select('*').from('user_registration');
 }
 
@@ -10,4 +10,4 @@ const userDetailsByID = (id) =>{
     .where('user_id', id);
 }
 
-module.exports = {users_detail, userDetailsByID};
+module.exports = {usersDetail, userDetailsByID};
