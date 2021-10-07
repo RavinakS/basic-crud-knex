@@ -10,4 +10,8 @@ const userDetailsByID = (id) =>{
     .where('user_id', id);
 }
 
-module.exports = {usersDetail, userDetailsByID};
+const userRegister = (userDetails) =>{
+    return db('user_registration').insert(userDetails);
+} 
+
+module.exports = {usersDetail, userDetailsByID, userRegister};
