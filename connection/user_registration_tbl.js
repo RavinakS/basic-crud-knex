@@ -9,5 +9,9 @@ database.schema.hasTable('user_registration').then(function(exists){
             table.string('password')
         })
     }
-})
+}).then((resolve)=>{
+    console.log("Successfully created!!");
+}).catch((err)=>{
+    console.log("Something went wrong!!");
+});
 
