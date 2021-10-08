@@ -10,4 +10,8 @@ database.schema.hasTable('user_posts').then((exists)=>{
             t.string('caption_for_img')
         })
     }
+}).then((resolve)=>{
+    console.log("Successfully created!!");
+}).catch((err)=>{
+    console.log("Something went wrong!!");
 });
