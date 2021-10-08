@@ -14,4 +14,14 @@ const userRegister = (userDetails) =>{
     return db('user_registration').insert(userDetails);
 } 
 
-module.exports = {usersDetail, userDetailsByID, userRegister};
+const updateRecord = (id, data) =>{
+    return db('user_registration')
+    .update(data).where('user_id', id)
+}
+
+const removeUser = (id) =>{
+    return db('user_registration')
+    .where('user_id', id).del();
+}
+
+module.exports = {usersDetail, userDetailsByID, userRegister, removeUser, updateRecord};
