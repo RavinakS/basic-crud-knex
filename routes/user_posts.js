@@ -23,5 +23,24 @@ router.post('/new-post', (req, res)=>{
     })
 })
 
+router.put('/edit-post/:id', (req, res)=>{
+    userPostsTable.editPost(req.params.id, req.body)
+    .then((response)=>{
+        res.send({"status-code": 200, "message": "Changes are saved."})
+    })
+    .catch((err)=>{
+        res.send(err)
+    })
+})
+
+router.delete('/delete-post/:id', (req, res)=>{
+    userPostsTable.deletePost(req.params.id)
+    .then((response)=>{
+        res.send({"status-code": 200, "message": "Your post is successfully deleted."})
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+})
 
 module.exports = router;

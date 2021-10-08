@@ -8,5 +8,13 @@ const newPost = (data) =>{
     return db('user_posts').insert(data);
 }
 
-module.exports = {allPosts, newPost};
+const editPost = (id, updatedPost) =>{
+    return db('user_posts').where("post_id", id).update(updatedPost)
+}
+
+const deletePost = (id) =>{
+    return db('user_posts').where("post_id", id).del();
+}
+
+module.exports = {allPosts, newPost, editPost, deletePost};
 
