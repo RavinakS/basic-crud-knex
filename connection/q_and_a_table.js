@@ -8,4 +8,8 @@ db.schema.hasTable('q_and_as').then((exists)=>{
             t.string('answers')
         });
     }
+}).then((resolve)=>{
+    console.log("Successfully created!!");
+}).catch((err)=>{
+    console.log("Something went wrong!!");
 })

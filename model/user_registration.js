@@ -16,7 +16,7 @@ const userRegister = (userDetails) =>{
 
 const updateRecord = (id, data) =>{
     return db('user_registration')
-    .update(data).where('user_id', id)
+    .where('user_id', id).update(data);
 }
 
 const removeUser = (id) =>{
