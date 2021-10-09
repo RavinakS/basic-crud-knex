@@ -4,7 +4,7 @@
 Create three tables 1. user registration, 2. user posts and 3. Question answer and for each table I have to write four routs(get, post, put and delete)
 
 # MVC
-## M(Model)
+## Model (Queries, Model is known as interface of db)
 - connection (db connection using knex and creating tables)
   - database.js - database connection which is "user_details" 
   - user_registration_table.js - creating user registration table
@@ -19,12 +19,16 @@ queries - (all about query)
 ## V(View)
 - nothing
 
-## Controller
+## Controller (Logic, only routes are there since the project is not about logic test)
 - routes - this folder is for all the routs
   - user_registration.js - all the routs of user_registration queries
   - user_posts.js - all the routs of user_posts queries
   - q_and_a.js - routs of q_and_a.js queries
 
+## How to run-
+  - server.js - this is my main file, have added script in the package.json file so to run the server with nodemon type "npm run server".
+
+  - nodemon - nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 **Inputs** 
  1. User registration
