@@ -13,6 +13,16 @@ router.get('/all-posts', (req, res)=>{
     })
 })
 
+router.get('/post/:id', (req, res)=>{
+    userPostsTable.postByID(req.params.id)
+    .then((response)=>{
+        res.send(response);
+    })
+    .catch((err)=>{
+        res.send(err);
+    })
+})
+
 router.post('/new-post', (req, res)=>{
     userPostsTable.newPost(req.body)
     .then((result)=>{
