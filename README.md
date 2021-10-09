@@ -57,7 +57,7 @@ queries - (all about query)
  - next topics like JWT
 
 #### Dependencies
- - nodemon - to restart the server automatically everytime I change anything in the code.
+ - nodemon - to restart the server automatically everytime I change anything in the code, so that after changing something in the code we don't have to close and re-start/run the server
 
 
 #### What is:- 
