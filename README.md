@@ -49,7 +49,8 @@ queries - (all about query)
  - difference between get() and post() method
  - How middleware functions are getting called without paranthisis (app.use(demoMiddleware);)
  - How to use middleware to check if the user is logged in? the basic one
- 
+ - Foreign key?
+ - next topics like JWT
 
 #### Dependencies
  - nodemon - to restart the server automatically everytime I change anything in the code.
