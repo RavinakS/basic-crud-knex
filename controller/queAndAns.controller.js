@@ -1,4 +1,4 @@
-const table = require('../model/que_and_ans');
+const table = require('../model/queAndAns.model');
 
 const showAllQuesAns = (req, res)=>{
     table.showAllQuesAns()

@@ -1,4 +1,4 @@
-const userPostsTable = require('../model/user_posts');
+const userPostsTable = require('../model/userPosts.model');
 
 const allPosts = (req, res)=>{
     userPostsTable.allPosts()

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {usersDetail, userDetailsByID, userRegister, updateRecord, removeUser} = require('../controller/user_registration');
+const {usersDetail, userDetailsByID, userRegister, updateRecord, removeUser} = require('../controller/userRegistration.controller');
 
 router.get('/users', usersDetail);
 

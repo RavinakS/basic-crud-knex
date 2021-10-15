@@ -1,4 +1,4 @@
-const userRegTable = require('../model/user_registration');
+const userRegTable = require('../model/userRegistration.model');
 
 const usersDetail = (req, res)=>{
     userRegTable.usersDetail()
