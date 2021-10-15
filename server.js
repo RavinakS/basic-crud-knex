@@ -8,7 +8,7 @@ app.use('/', users);
 const users_posts = require('./routes/user_posts');
 app.use('/', users_posts);
 
-const qAndas = require('./routes/q_and_a');
+const qAndas = require('./routes/que_and_ans');
 app.use('/', qAndas);
 
 app.listen(3040, function(req, res){

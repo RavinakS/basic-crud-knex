@@ -1,7 +1,7 @@
 const { response } = require('express');
 const express = require('express');
 const router = express.Router();
-const table = require('../model/q_and_a');
+const table = require('../model/que_and_ans');
 
 router.get('/all-qs-as', (req, res)=>{
     table.showAllQuesAns()

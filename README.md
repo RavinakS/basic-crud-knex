@@ -79,7 +79,11 @@ middleware as functions that execute after the server receives the request and b
 
 blog - https://blog.webdevsimplified.com/2019-12/express-middleware-in-depth/
 
+## REST/RESTfull API
+REST is a standard of creating API
+
 video - https://www.youtube.com/watch?v=lY6icfhap2o
 
 # Extra
 - postman console short-cut - CMD/CTRL + ALT + C
+- 
