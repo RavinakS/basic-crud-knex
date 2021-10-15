@@ -39,29 +39,12 @@ queries - (all about query)
     - question_id, question, answer  
 
 
-## Needs to study
-
- - string() method
- - difference between controller and routs folder
- - how .then works with hasTable() method
- - express.Router()
- - how, knex, express, and database all three are connected, how do they work
- - why do we need framwork (express.js)
- - what is rout/routing (http and http methods - get, post, put, delete)
- - Middleware
- - How many parameters does app.get() method takes
- - difference between get() and post() method
- - How middleware functions are getting called without paranthisis (app.use(demoMiddleware);)
- - How to use middleware to check if the user is logged in? the basic one
- - Foreign key?
- - next topics like JWT
-
 #### Dependencies
  - nodemon - to restart the server automatically everytime I change anything in the code, so that after changing something in the code we don't have to close and re-start/run the server
 
 
 #### What is:- 
-### rout
+### route
  route is basically a path in http methods (get, post, put, delete, etc)
   - syntax - get(rout, callback)/ get('/user', function(req, res){})
 ### res.send()
