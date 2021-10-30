@@ -5,7 +5,7 @@ const usersDetail = () =>{
 }
 
 const userDetailsByID = (id) =>{
-    return db.select('*')
+    return db.select('email', 'name', 'user_role')
     .from('user_registration')
     .where('user_id', id);
 }
