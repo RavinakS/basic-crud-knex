@@ -40,4 +40,5 @@ const deleteQue = (req, res)=>{
     })
 }
 
+
 module.exports = {showAllQuesAns, askQuestion, answer, deleteQue}

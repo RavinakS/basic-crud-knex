@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/RavinakS/basic-crud-knex#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.95.11",
