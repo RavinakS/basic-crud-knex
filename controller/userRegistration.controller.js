@@ -1,4 +1,12 @@
 const userRegTable = require('../model/userRegistration.model');
+const password = require('./middlewares/password');
+
+const login = (req, res) =>{
+    let password = req.body.password;
+    let user_role = userRegTable.userDetailsByID(email)
+    
+
+}
 
 const usersDetail = (req, res)=>{
     userRegTable.usersDetail()
@@ -20,8 +28,14 @@ const userDetailsByID = (req, res)=>{
     })
 }
 
-const userRegister = (req, res)=>{
-    userRegTable.userRegister(req.body)
+const userRegister = async (req, res)=>{
+    hashPassword = await password.encrypt(req.body.password);
+    userData = {
+        "name": req.body.name,
+        "email": req.body.email,
+        "password": hashPassword
+    }
+    userRegTable.userRegister(userData)
     .then((ststus)=>{
         res.send("user is successfully registered!!");
     })
@@ -48,4 +62,4 @@ const removeUser = (req, res)=>{
     .catch(console.error());
 }
 
-module.exports = {usersDetail, userDetailsByID, userRegister, updateRecord, removeUser}
+module.exports = {usersDetail, userDetailsByID, userRegister, updateRecord, removeUser, login}

@@ -4,10 +4,14 @@ const usersDetail = () =>{
     return db.select('*').from('user_registration');
 }
 
-const userDetailsByID = (id) =>{
+const userPasswordById = (id) =>{
+    return db.select('password').from('user_registration').where('email', id);
+}
+
+const userDetailsByID = (email) =>{
     return db.select('email', 'name', 'user_role')
     .from('user_registration')
-    .where('user_id', id);
+    .where('email', email);
 }
 
 const userRegister = (userDetails) =>{
@@ -24,4 +28,4 @@ const removeUser = (id) =>{
     .where('user_id', id).del();
 }
 
-module.exports = {usersDetail, userDetailsByID, userRegister, removeUser, updateRecord};
+module.exports = {usersDetail, userPasswordById, userDetailsByID, userRegister, removeUser, updateRecord};

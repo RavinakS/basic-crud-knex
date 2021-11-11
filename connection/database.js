@@ -8,7 +8,7 @@ const knex = require('knex')({
         host: host,
         user: user,
         password: password,
-        database: 'user_details',
+        database: 'parmpara_project'
     }
 })
 
