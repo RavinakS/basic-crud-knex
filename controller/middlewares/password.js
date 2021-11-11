@@ -12,9 +12,7 @@ async function encrypt(req, res, next){
     }catch{
         res.send("password is required.");
         next();
-    }
-    
-    
+    }  
 }
 
 async function decrypt(req, res, next){

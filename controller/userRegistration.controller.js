@@ -1,9 +1,21 @@
-const userRegTable = require('../model/userRegistration.model');
-const password = require('./middlewares/password');
+const userRegister = async (req, res)=>{
+    userData = {
+        "name": req.body.name,
+        "email": req.body.email,
+        "password": req.hashPWD,
+        "user_role": req.body.user_role
+    }
+    userRegTable.userRegister(userData)
+    .then((ststus)=>{
+        res.send("user is successfully registered!!");
+    })
+    .catch((console.error()));
+}
 
 const login = (req, res) =>{
-    let password = req.body.password;
-    let user_role = userRegTable.userDetailsByID(email)
+    if(req.valid){
+
+    }
     
 
 }
@@ -26,20 +38,6 @@ const userDetailsByID = (req, res)=>{
     .catch((err)=>{
         res.send(err);
     })
-}
-
-const userRegister = async (req, res)=>{
-    hashPassword = await password.encrypt(req.body.password);
-    userData = {
-        "name": req.body.name,
-        "email": req.body.email,
-        "password": hashPassword
-    }
-    userRegTable.userRegister(userData)
-    .then((ststus)=>{
-        res.send("user is successfully registered!!");
-    })
-    .catch((console.error()));
 }
 
 const updateRecord = (req, res)=>{
