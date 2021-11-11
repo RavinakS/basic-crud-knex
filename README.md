@@ -4,6 +4,8 @@
  - signUp - password hashing, creating token for authorization
  - login - password decrypt, authorization
  - creating post - user and create, view, delete and update posts on the base of their role
+ - question and answer - this is like a meraki app, user can create a course and subexercise of that course if the user have access
+ 
 
 ## Basic Mysql implementation with knex
 Create three tables 1. user registration, 2. user posts and 3. Question answer and for each table I have to write four routs(get, post, put and delete)
