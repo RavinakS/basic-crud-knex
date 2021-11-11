@@ -25,7 +25,7 @@ const updateRecord = (id, data) =>{
 
 const removeUser = (id) =>{
     return db('user_registration')
-    .where('user_id', id).del();
+    .where('email', id).del();
 }
 
 module.exports = {usersDetail, userPasswordById, userDetailsByID, userRegister, removeUser, updateRecord};

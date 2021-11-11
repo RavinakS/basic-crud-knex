@@ -8,12 +8,12 @@ router.post('/user-register', encrypt, userRegister, createToken);
 
 router.get('/login', decrypt, login, createToken);
 
-router.get('/users', usersDetail);
+router.get('/users', verifyToken, usersDetail);
 
-router.get('/user/:id', userDetailsByID);
+router.get('/user/:id', verifyToken, userDetailsByID);
 
-router.put('/update/:id', updateRecord)
+router.put('/update/:id', verifyToken, updateRecord)
 
-router.delete('/remove-user/:id', removeUser)
+router.delete('/remove-user', verifyToken, removeUser)
 
 module.exports = router;

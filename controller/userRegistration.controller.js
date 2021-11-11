@@ -1,3 +1,5 @@
+const userRegTable = require('../model/userRegistration.model');
+
 const userRegister = async (req, res)=>{
     userData = {
         "name": req.body.name,
@@ -5,11 +7,14 @@ const userRegister = async (req, res)=>{
         "password": req.hashPWD,
         "user_role": req.body.user_role
     }
-    userRegTable.userRegister(userData)
-    .then((ststus)=>{
+    try{
+        user = await userRegTable.userRegister(userData);
         res.send("user is successfully registered!!");
-    })
-    .catch((console.error()));
+    }
+    catch(err){
+        res.send(err.sqlMessage);
+        // res.send(err.details[0].message);
+    }
 }
 
 const login = (req, res) =>{
@@ -53,11 +58,14 @@ const updateRecord = (req, res)=>{
 }
 
 const removeUser = (req, res)=>{
-    userRegTable.removeUser(req.params.id)
+    userRegTable.removeUser(req.body.email)
     .then((result)=>{
         res.send("user is successfully deleted!!");
     })
-    .catch(console.error());
+    .catch((err)=>{
+        console.log(err);
+        res.send(err.sqlMessage);
+    });
 }
 
 module.exports = {usersDetail, userDetailsByID, userRegister, updateRecord, removeUser, login}
