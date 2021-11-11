@@ -1,5 +1,10 @@
 # Parmpara Project
 
+## What is done:-
+ - signUp - password hashing, creating token for authorization
+ - login - password decrypt, authorization
+ - creating post - user and create, view, delete and update posts on the base of their role
+
 ## Basic Mysql implementation with knex
 Create three tables 1. user registration, 2. user posts and 3. Question answer and for each table I have to write four routs(get, post, put and delete)
 
